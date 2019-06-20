@@ -1,0 +1,2 @@
+EXPENSE,Entertainment,Cinema,-55.0
+INCOME,Gift,Gift for a birthday,150.0
