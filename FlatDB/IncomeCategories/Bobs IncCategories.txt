@@ -1,0 +1,4 @@
+Salary
+Tax Refund
+Bonus
+Gift

@@ -1,5 +1,8 @@
 package com.bohdan;
 
+import com.bohdan.Entities.Transactions;
+import com.bohdan.Entities.User;
+
 import java.io.IOException;
 import java.util.Comparator;
 import java.util.List;

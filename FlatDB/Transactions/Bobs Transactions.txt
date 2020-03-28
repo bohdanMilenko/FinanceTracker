@@ -1,0 +1,3 @@
+EXPENSE,Gifts,Groceries,-30.0
+EXPENSE,Rent,Salary,-1500.0
+INCOME,Salary,Salary correct one,2000.0

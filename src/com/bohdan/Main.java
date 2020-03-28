@@ -9,7 +9,6 @@ public class Main {
         RegistrationAndEntry registrationAndEntryProcess = new RegistrationAndEntry();
 
 
-
             System.out.println("Hello! Welcome to your pocket finance manager.");
             System.out.println("If you are a new user, you need to register first!");
 

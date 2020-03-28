@@ -1,11 +1,16 @@
 package com.bohdan;
 
+import com.bohdan.Entities.User;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
+
+import static com.bohdan.Entities.User.CUSTOMER_INFO_PATH;
+import static com.bohdan.Entities.User.TRANSACTIONS_PATH;
 
 public class RegistrationAndEntry {
     private static List<User> userList;
@@ -77,7 +82,7 @@ public class RegistrationAndEntry {
     private void loadUser() throws IOException {
         System.out.println("Enter your name:");
         String name = scanner.nextLine();
-        BufferedReader userInfo = new BufferedReader(new FileReader(name + "s Info.txt"));
+        BufferedReader userInfo = new BufferedReader(new FileReader(CUSTOMER_INFO_PATH + name + "s Info.txt"));
         String input = userInfo.readLine();
         String[] userLine = input.split(",");
         double amount = Double.parseDouble(userLine[1]);
@@ -87,7 +92,7 @@ public class RegistrationAndEntry {
 
     private void loadUsersTransactions() throws IOException{
         User user = userList.get(0);
-        BufferedReader usersTransactions = new BufferedReader(new FileReader(user.getName() + "s Transactions.txt"));
+        BufferedReader usersTransactions = new BufferedReader(new FileReader(TRANSACTIONS_PATH + user.getName() + "s Transactions.txt"));
         String input;
         while ((input = usersTransactions.readLine())!=null){
             String[] transactionLine = input.split(",");
