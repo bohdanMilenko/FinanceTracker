@@ -1,4 +1,4 @@
-package com.bohdan;
+package com.bohdan.Entities;
 
 import java.io.*;
 import java.util.LinkedList;

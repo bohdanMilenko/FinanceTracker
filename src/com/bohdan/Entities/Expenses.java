@@ -1,4 +1,4 @@
-package com.bohdan;
+package com.bohdan.Entities;
 
 public class Expenses extends  Transactions{
 
